@@ -17,7 +17,7 @@ The isicsBreadcrumbsPlugin is licensed under the GNU Lesser General Public Licen
   * Install the plugin:
 
         [plain]
-        $ symfony plugin:install isicsBreadcrumbsPlugin
+        $ symfony plugin:install isicsBreadcrumbsPlugin -s beta
         $ symfony cc
  
   * Enable the module isicsBreadcrumbs in settings.yml:
@@ -80,7 +80,7 @@ You can set your own root:
  
 ## Changelog
 
-### 2009-05-19 | 0.9.4 beta
+### 2009-05-19 | 0.9.5 beta
   * Fixed package.xml
   * Updated README to markdown
 
