@@ -10,10 +10,10 @@
   <email>contact@isics.fr</email>
   <active>yes</active>
  </lead>
- <date>2009-02-02</date>
+ <date>2009-05-19</date>
  <version>
-   <release>0.9.3</release>
-   <api>0.9.3</api>
+   <release>0.9.4</release>
+   <api>0.9.4</api>
  </version>
  <stability>
   <release>beta</release>
@@ -56,7 +56,8 @@
     <name>symfony</name>
     <channel>pear.symfony-project.com</channel>
     <min>1.1.0</min>
-    <max>1.2.0</max>
+    <max>1.3.0</max>
+    <exclude>1.3.0</exclude
    </package>
   </required>
  </dependencies>
@@ -65,19 +66,20 @@
  </phprelease>
 
  <changelog>
-  <release>
+  <release>    
    <version>
-    <release>0.9.3</release>
-    <api>0.9.3</api>
+    <release>0.9.4</release>
+    <api>0.9.4</api>
    </version>
    <stability>
     <release>beta</release>
     <api>beta</api>
    </stability>
-   <date>2009-02-02</date>
+   <date>2009-05-19</date>
    <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
    <notes>
-Nothing
+Fixed package.xml
+Updated README to markdown
    </notes>
   </release>   
   <release>
