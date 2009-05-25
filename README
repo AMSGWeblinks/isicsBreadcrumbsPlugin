@@ -25,7 +25,7 @@ The isicsBreadcrumbsPlugin is licensed under the GNU Lesser General Public Licen
         [plain]
         all:
           .settings:
-            enabled_modules: [default, isicsBreadcrumbsPlugin]
+            enabled_modules: [default, isicsBreadcrumbs]
  
 ## Usage
 
