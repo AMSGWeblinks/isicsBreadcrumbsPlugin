@@ -11,15 +11,17 @@ class isicsBreadcrumbsItem
 {
   protected $text;
   protected $uri;
+  protected $options;
     
   /**
    * Constructor
    *
    */    
-  public function __construct($text, $uri = null)
+  public function __construct($text, $uri = null, $options = array())
   {
     $this->text = $text;
-    $this->uri  = $uri;
+    $this->uri = $uri;
+    $this->options = $options;
   }
   
   /**
@@ -38,6 +40,15 @@ class isicsBreadcrumbsItem
   public function getText()
   {
     return $this->text;
+  }
+  
+  /**
+   * Retrieve the options of the item
+   *
+   */  
+  public function getOptions()
+  {
+    return $this->options;
   }
 }
 
@@ -75,10 +86,11 @@ class isicsBreadcrumbs
    *
    * @param string $text
    * @param string $uri
+   * @param array  $options
    */
-  public function addItem($text, $uri = null)
+  public function addItem($text, $uri = null, $options = array())
   { 
-    array_push($this->items, new isicsBreadcrumbsItem($text, $uri));
+    array_push($this->items, new isicsBreadcrumbsItem($text, $uri, $options));
   }
 
   /**
@@ -86,9 +98,9 @@ class isicsBreadcrumbs
    *
    * @see addItem
    */
-  public function add($text, $uri = null)
+  public function add($text, $uri = null, $options = array())
   {
-    $this->addItem($text, $uri);
+    $this->addItem($text, $uri, $options);
   }
 
   /**

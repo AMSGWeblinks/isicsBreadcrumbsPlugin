@@ -31,14 +31,14 @@ The isicsBreadcrumbsPlugin is licensed under the GNU Lesser General Public Licen
 
 Define the path in your templates:
 
-    [php]
+    [plain]
     <?php $breadcrumbs->addItem('My action', 'myModule/myAction') ?>
 
     => Home > My action
 
 If the action is deeper:
 
-    [php]
+    [plain]
     <?php $breadcrumbs->addItem('My previous action', 'myModule/myPreviousAction') ?>
     <?php $breadcrumbs->addItem('My action', 'myModule/myAction') ?>
   
@@ -46,7 +46,7 @@ If the action is deeper:
 
 Define the path in your actions:
 
-    [php]
+    [plain]
     public function executeMyAction()
     {
       isicsBreadcrumbs::getInstance()->addItem('My action', 'myModule/myAction');
@@ -55,7 +55,7 @@ Define the path in your actions:
 
 Include the breadcrumbs component (in the layout for instance):
 
-    [php]
+    [plain]
     <p id="breadcrumbs">
       You are here :
       <?php include_component('isicsBreadcrumbs', 'show') ?>
@@ -63,7 +63,7 @@ Include the breadcrumbs component (in the layout for instance):
 
 You can set your own root:
 
-    [php]
+    [plain]
     <p id="breadcrumbs">
       You are here :
       <?php include_component('isicsBreadcrumbs', 'show', array(
@@ -80,6 +80,10 @@ You can set your own root:
  
 ## Changelog
 
+### 2010-06-23 | 0.9.7 beta
+  * Added plugin configuration class
+  * Added options to breadcrumbs items
+  
 ### 2009-05-19 | 0.9.5 beta
   * Fixed package.xml
   * Updated README to markdown
