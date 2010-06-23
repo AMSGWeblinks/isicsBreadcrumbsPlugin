@@ -15,7 +15,7 @@ class BaseisicsBreadcrumbsComponents extends sfComponents
     
     if (isset($this->root))
     {
-      $isicsBreadcrumbs->setRoot($this->root['text'], $this->root['uri']);
+      $isicsBreadcrumbs->setRoot($this->root['text'], $this->root['uri'], isset($this->root['options']) ? $this->root['options'] : array());
     }
     
     if (!isset($this->offset))
