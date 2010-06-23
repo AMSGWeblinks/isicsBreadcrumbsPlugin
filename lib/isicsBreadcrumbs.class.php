@@ -128,7 +128,6 @@ class isicsBreadcrumbs
     return self::$instance;
   }
   
-  
   /**
    * Retrieve an array of isicsBreadcrumbsItem
    *
@@ -144,9 +143,12 @@ class isicsBreadcrumbs
   /**
    * Redefine the root item
    *
+   * @param string $text
+   * @param string $uri
+   * @param array  $options
    */
-  public function setRoot($text, $uri)
+  public function setRoot($text, $uri, $options = array())
   {
-    $this->items[0] = new isicsBreadcrumbsItem($text, $uri);
+    $this->items[0] = new isicsBreadcrumbsItem($text, $uri, $options);
   }
 }

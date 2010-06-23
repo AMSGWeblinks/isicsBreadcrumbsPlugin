@@ -72,7 +72,7 @@ You can set your own root:
     </p>
 
 ## API
-  * `void addItem(String $test, String $uri)`: add an item at the end of the breadcrumbs
+  * `void addItem(String $test, String $uri, Array $options)`: add an item at the end of the breadcrumbs
   * `void clearItems()`: erase all items
   * `isicsBreadcrumbs getInstance()`: retrieve the singleton instance
   * `array getItems()`: return an array of isicsBreadcrumbsItem
