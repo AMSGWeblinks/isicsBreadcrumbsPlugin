@@ -80,6 +80,10 @@ You can set your own root:
  
 ## Changelog
 
+### 2010-06-23 | 0.9.9 beta
+  * Added support for escaping strategy
+  * Added options for root item in component
+  
 ### 2010-06-23 | 0.9.8 beta
   * Added missing comments
   * Updated API

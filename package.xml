@@ -12,8 +12,8 @@
  </lead>
  <date>2010-06-23</date>
  <version>
-   <release>0.9.8</release>
-   <api>0.9.8</api>
+   <release>0.9.9</release>
+   <api>0.9.9</api>
  </version>
  <stability>
   <release>beta</release>
@@ -72,6 +72,22 @@
  </phprelease>
 
  <changelog>
+	<release>    
+   <version>
+    <release>0.9.9</release>
+    <api>0.9.9</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-06-23</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+Added support for escaping strategy
+Added options for root item in component
+   </notes>
+  </release>
 	<release>    
    <version>
     <release>0.9.8</release>
