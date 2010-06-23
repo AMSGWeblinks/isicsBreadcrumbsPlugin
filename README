@@ -80,6 +80,10 @@ You can set your own root:
  
 ## Changelog
 
+### 2010-06-23 | 0.9.8 beta
+  * Added missing comments
+  * Updated API
+  
 ### 2010-06-23 | 0.9.7 beta
   * Added plugin configuration class
   * Added options to breadcrumbs items
